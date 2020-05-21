@@ -1,0 +1,19 @@
+{
+  "name": "rerunnerforretest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "read.dir.sync.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
+  },
+  "dependencies": {
+    "cjs-module": "^1.5.0"
+  }
+}
