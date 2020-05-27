@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 
 function getFilesListWithSubDirs(dirPath, filesList = []) {
-    if(!fs.statSync(dirPath).isDirectory) {
+    if(!fs.statSync(dirPath).isDirectory()) {
         throw new Error(`First argument is not a directory: ${dirPath}`)
     }
     const filesAndDirs = fs

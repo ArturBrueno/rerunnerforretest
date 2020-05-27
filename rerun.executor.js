@@ -7,6 +7,6 @@ function createMochaCmd(pathToSpecFile) {
 const commandsList = getFilesListWithSubDirs('./specs')
 .map(createMochaCmd)
 
-rerunner(commandsList, 10, 5).then(console.log)
+rerunner(commandsList, 3, 5).then(console.log)
 
 

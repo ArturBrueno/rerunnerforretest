@@ -35,12 +35,12 @@ async function rerunner(commadsArr, rerunCount = 3, threadsCount = 2) {
 
     const failedCommands = await Array.from(Array(rerunCount)).reduce((acc, cur, index) => {
         return acc
-        .then((resolveCommands) => rerunCommands(resolveCommands))
+        .then((resolvedCommands) => rerunCommands(resolvedCommands))
         .then((results) => {
-            console.log(`Execution index is: ${index}`);
-            console.log('____________________________');
-            console.log('Failed commands is', results);
-            console.log('____________________________');
+            console.log(`Execution index is: ${index}`)
+            console.log('____________________________')
+            console.log('Failed commands is', results)
+            console.log('____________________________')
             return results            
         })
     }, Promise.resolve(commadsArr))
