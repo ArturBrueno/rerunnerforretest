@@ -1,7 +1,8 @@
-const { wrapExec } = require('./exec.wrapper.js')
-const { getFilesListWithSubDirs } = require('./read.dir.sync.js')
+const { getFilesListWithSubDirs } = require('./read.dir.sync')
+const { rerunner } = require('./rerunner')
+
 
 module.exports = {
-    wrapExec,
+    rerunner,
     getFilesListWithSubDirs
 }
